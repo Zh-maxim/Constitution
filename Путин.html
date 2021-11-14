@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🅟🅤🅣🅘🅝</title>
+</head>
+<body>
+    <section class="vse">
+        <div class="inVse">
+<p id="que">Вы принимаете поправки в конституции?</p>
+<div id="btns">
+    <input type="button" value="Да" width="300px" height="200px" id="lol1" >
+    <input type="button" value="Нет" width="300px" height="200px" id="lol2">
+</div>
+        </div>
+    </section>
+    <script>
+        let lol1 = document.getElementById("lol1");
+        let lol2 = document.getElementById("lol2");
+        let lol3 = Math.floor(Math.random() * 200) + 1;
+        let lol4 = Math.floor(Math.random() * 400) + 1;
+        let pue = document.getElementById("que")
+        
+        lol2.onmouseover = function(){
+            let lol3 = Math.floor(Math.random() * 200) + 1;
+            let lol4 = Math.floor(Math.random() * 400) + 1;
+            console.log(lol3, lol4)
+            lol2.style.display = "none";
+        }
+        lol1.onclick = function(){
+            pue.innerHTML = "Я знал)"
+        }
+    </script>
+    <style>
+    body{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        
+        }
+        .vse{
+        
+        width: 1500px;
+        height: 900px;
+        border: 2px solid;
+        }
+        p{
+            font-size: 50px;
+            text-align: center;
+        }
+        #btns{
+            width: 100%;
+            height: 300px;
+            margin-top: 492px;
+            display: flex;
+            align-items: center;
+        }
+        input{
+            width:300px ;
+            height: 200px;
+            font-size: 40px;
+        }
+        #lol1{
+            margin-left: 200px;
+        
+        }
+        #lol2{
+            margin-left: 500px;
+            
+        }</style>
+</body>
+</html>
